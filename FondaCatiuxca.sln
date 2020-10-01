@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FondaCatiuxca", "FondaCatiuxca\FondaCatiuxca.csproj", "{ABFA062A-F42F-4542-8A85-5CE241847ED7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. UI", "1. UI", "{FE06167E-D6EE-4951-923D-2E23C3023C4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business", "{5D71744F-C9B0-42B4-B3EF-2AA5C334C10F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Data", "3. Data", "{A57CC615-6009-4A40-97BC-0FFBD6D38F75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +24,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABFA062A-F42F-4542-8A85-5CE241847ED7} = {FE06167E-D6EE-4951-923D-2E23C3023C4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BBB55E5-647B-4C8A-B098-7984F3D9E688}

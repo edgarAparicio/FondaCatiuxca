@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FondaCatiuxca", "FondaCatiuxca\FondaCatiuxca.csproj", "{ABFA062A-F42F-4542-8A85-5CE241847ED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FondaCatiuxca", "FondaCatiuxca\FondaCatiuxca.csproj", "{ABFA062A-F42F-4542-8A85-5CE241847ED7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. UI", "1. UI", "{FE06167E-D6EE-4951-923D-2E23C3023C4E}"
 EndProject
@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Data", "3. Data", "{A57CC615-6009-4A40-97BC-0FFBD6D38F75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFondaCatiuxca", "DataFondaCatiuxca\DataFondaCatiuxca.csproj", "{EB7F5167-6E2E-4B47-A6DB-32E81672A6E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataFondaCatiuxca", "DataFondaCatiuxca\DataFondaCatiuxca.csproj", "{EB7F5167-6E2E-4B47-A6DB-32E81672A6E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFondaCatiuxca", "EntityFondaCatiuxca\EntityFondaCatiuxca.csproj", "{637C9E36-5E0A-4C41-AC19-56001AE16ACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFondaCatiuxca", "EntityFondaCatiuxca\EntityFondaCatiuxca.csproj", "{637C9E36-5E0A-4C41-AC19-56001AE16ACC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

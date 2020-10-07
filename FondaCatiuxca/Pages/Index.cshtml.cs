@@ -7,7 +7,7 @@ using EdgarAparicio.FondaCatiuxca.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FondaCatiuxca.Pages.Menus
+namespace FondaCatiuxca.Pages
 {
     public class IndexModel : PageModel
     {

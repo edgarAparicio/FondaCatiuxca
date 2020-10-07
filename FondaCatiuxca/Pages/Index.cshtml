@@ -1,0 +1,11 @@
+﻿@page
+@model FondaCatiuxca.Pages.IndexModel
+@{
+    ViewData["Title"] = "Fonda Catiuxca";
+}
+
+
+@foreach (var menu in Model.Menus)
+{
+    <partial name="Menus/_partialViewListaMenus" model="menu" />
+}

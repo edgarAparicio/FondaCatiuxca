@@ -8,5 +8,8 @@ namespace EdgarAparicio.FondaCatiuxca.Data
     public interface IMenu
     {
         IEnumerable<Menu> ObtenerListaMenus();
+        Menu ObtenerMenuPorId(int idMenu);
+        Menu EditarMenu(Menu menuEditado);
+        int Commit();
     }
 }

@@ -11,17 +11,21 @@ namespace FondaCatiuxca.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly IMenu menuReposito;
+        private readonly IMenu menuRepositorio;
         public IEnumerable<Menu> Menus { get; set; }
+
+        [BindProperty(SupportsGet = true)] //Almacena los valores desde aqui para no recibirlos en el metodo 
+        public string NombreMenu { get; set; }
 
         public IndexModel(IMenu menu)
         {
-            this.menuReposito = menu;
+            this.menuRepositorio = menu;
         }
 
         public void OnGet()
         {
-            Menus = menuReposito.ObtenerListaMenus();
+            Menus = menuRepositorio.ObtenerListaMenus();
+            Menus = menuRepositorio.BuscarMenuPorNombre(NombreMenu);
         }
     }
 }

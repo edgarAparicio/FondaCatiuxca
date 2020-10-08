@@ -41,5 +41,31 @@ namespace EdgarAparicio.FondaCatiuxca.Data
         {
             return db.SaveChanges();
         }
+
+        public Menu ElimnarMenu(int idMenu)
+        {
+            var menu = ObtenerMenuPorId(idMenu);
+            if(menu != null)
+            {
+                db.Menu.Remove(menu);
+            }
+
+            return menu;
+        }
+
+        public Menu AgregarMenu(Menu menuNuevo)
+        {
+            db.Menu.Add(menuNuevo);
+            return menuNuevo;
+        }
+
+        public IEnumerable<Menu> BuscarMenuPorNombre(string nombreMenu)
+        {
+            var query = from menu in db.Menu
+                        where menu.Nombre.StartsWith(nombreMenu) || string.IsNullOrEmpty(nombreMenu)
+                        orderby menu.Nombre
+                        select menu;
+            return query;
+        }
     }
 }

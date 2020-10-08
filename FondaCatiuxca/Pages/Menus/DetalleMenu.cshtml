@@ -1,0 +1,17 @@
+﻿@page "{idMenu:int?}"
+@model FondaCatiuxca.Pages.Menus.DetalleMenuModel
+@{
+    ViewData["Title"] = "Detalle Menu";
+}
+
+<h2>@Model.Menu.Nombre</h2>
+<div>
+    Id: @Model.Menu.Id
+</div>
+<div>
+    Descripcion: @Model.Menu.Descripcion
+</div>
+<div>
+    Tipo de Comida: @Model.Menu.TipoComida
+</div>
+<a asp-page="/Index" class="btn btn-primary">Lista de Menus</a>

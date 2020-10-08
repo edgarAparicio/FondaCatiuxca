@@ -16,8 +16,9 @@ namespace FondaCatiuxca.Pages.Menus
         private readonly IMenu menuRepositorio;
         private readonly IHtmlHelper htmlHelper;
 
-        [BindProperty]
+        [BindProperty] //Permite almacenar valores de entrada y de salida
         public Menu Menu { get; set; }
+
         public IEnumerable<SelectListItem> TipoComidaSelectList { get; set; }
 
         public EditarMenuModel(IMenu menu, IHtmlHelper htmlH)
@@ -57,7 +58,7 @@ namespace FondaCatiuxca.Pages.Menus
             }
             else
             {
-                menuRepositorio.EditarMenu(Menu);
+                menuRepositorio.AgregarMenu(Menu);
             }
             menuRepositorio.Commit();
             return RedirectToPage("/Index");

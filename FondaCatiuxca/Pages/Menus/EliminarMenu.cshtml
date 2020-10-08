@@ -1,0 +1,26 @@
+﻿@page "{idMenu:int?}"
+@model FondaCatiuxca.Pages.Menus.EliminarMenuModel
+@{
+    ViewData["Title"] = "Eliminar Menu";
+}
+
+<h2>@Model.Menu.Nombre</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Menu.Id"/>
+    <div>
+        Id: @Model.Menu.Id
+    </div>
+    <div>
+        Descripcion : @Model.Menu.Descripcion
+    </div>
+    <div>
+        Tipo de Comida : @Model.Menu.TipoComida
+    </div>
+    <div class="alert alert-danger">
+        Esta seguro que quieres eliminar este Menu @Model.Menu.Nombre?
+    </div>
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="/Index" class="btn btn-primary">Cancelar</a>
+
+</form>

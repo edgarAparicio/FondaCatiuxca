@@ -28,6 +28,7 @@ namespace FondaCatiuxca
             options.UseSqlServer(Configuration.GetConnectionString("CadenaConexion")));
 
             services.AddScoped<IMenu, DataMenu>();
+            services.AddScoped<IFeedback, DataFeedback>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

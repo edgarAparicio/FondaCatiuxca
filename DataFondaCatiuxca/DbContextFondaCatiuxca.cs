@@ -15,5 +15,7 @@ namespace EdgarAparicio.FondaCatiuxca.Data
 
         public DbSet<Menu> Menu { get; set; }
 
+        public DbSet<Feedback> Feedback { get; set; }
+
     }
 }

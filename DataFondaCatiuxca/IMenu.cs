@@ -11,5 +11,8 @@ namespace EdgarAparicio.FondaCatiuxca.Data
         Menu ObtenerMenuPorId(int idMenu);
         Menu EditarMenu(Menu menuEditado);
         int Commit();
+        Menu ElimnarMenu(int idMenu);
+        Menu AgregarMenu(Menu menuNuevo);
+        IEnumerable<Menu> BuscarMenuPorNombre(string nombreMenu);
     }
 }

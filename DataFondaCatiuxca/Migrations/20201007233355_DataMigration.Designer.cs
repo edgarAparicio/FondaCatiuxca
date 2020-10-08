@@ -3,14 +3,16 @@ using EdgarAparicio.FondaCatiuxca.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EdgarAparicio.FondaCatiuxca.Data.Migrations
 {
     [DbContext(typeof(DbContextFondaCatiuxca))]
-    partial class DbContextFondaCatiuxcaModelSnapshot : ModelSnapshot
+    [Migration("20201007233355_DataMigration")]
+    partial class DataMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataFondaCatiuxca", "DataFo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFondaCatiuxca", "EntityFondaCatiuxca\EntityFondaCatiuxca.csproj", "{637C9E36-5E0A-4C41-AC19-56001AE16ACC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FondaCatiuxcaMVC", "FondaCatiuxcaMVC\FondaCatiuxcaMVC.csproj", "{75828FA5-32F3-4E87-AE8C-D74FB862BF79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{637C9E36-5E0A-4C41-AC19-56001AE16ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{637C9E36-5E0A-4C41-AC19-56001AE16ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{637C9E36-5E0A-4C41-AC19-56001AE16ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75828FA5-32F3-4E87-AE8C-D74FB862BF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75828FA5-32F3-4E87-AE8C-D74FB862BF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75828FA5-32F3-4E87-AE8C-D74FB862BF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75828FA5-32F3-4E87-AE8C-D74FB862BF79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{ABFA062A-F42F-4542-8A85-5CE241847ED7} = {FE06167E-D6EE-4951-923D-2E23C3023C4E}
 		{EB7F5167-6E2E-4B47-A6DB-32E81672A6E6} = {A57CC615-6009-4A40-97BC-0FFBD6D38F75}
 		{637C9E36-5E0A-4C41-AC19-56001AE16ACC} = {5D71744F-C9B0-42B4-B3EF-2AA5C334C10F}
+		{75828FA5-32F3-4E87-AE8C-D74FB862BF79} = {FE06167E-D6EE-4951-923D-2E23C3023C4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BBB55E5-647B-4C8A-B098-7984F3D9E688}

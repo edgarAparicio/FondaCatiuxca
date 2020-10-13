@@ -1,0 +1,42 @@
+﻿@using EdgarAparicio.FondaCatiuxca.Business.Entity
+@model Menu
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>@Model.Nombre</h3>
+    </div>
+    <div class="panel-body">
+        <span>Descripcion: @Model.Descripcion</span>
+        <br />
+        <span>Tipo de Comida: @Model.TipoComida</span>
+    </div>
+    <div class="panel-footer">
+        @*<a class="btn btn-lg"
+          asp-page="./Menus/DetalleMenu"
+          asp-route-idMenu="@Model.Id">
+               <i class="glyphicon glyphicon-zoom-in"></i>
+        </a>*@
+        <a class="btn btn-lg"
+           asp-controller="Home" asp-action="Detalle"
+           asp-route-idMenu="@Model.Id">
+            <i class="glyphicon glyphicon-zoom-in"></i>
+        </a>
+        @*<a class="btn btn-lg"
+             asp-page="./Menus/EditarMenu"
+             asp-route-idMenu="@Model.Id">
+            <i class="glyphicon glyphicon-edit"></i>
+        </a>
+
+        <a class="btn btn-lg"
+           asp-page="./Menus/EliminarMenu"
+           asp-route-idMenu="@Model.Id">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>*@
+
+        <a class="btn btn-lg"
+           asp-controller="Home" asp-action="Editar"
+           asp-route-idMenu="@Model.Id">
+            <i class="glyphicon glyphicon-zoom-in"></i>
+        </a>
+    </div>
+</div>

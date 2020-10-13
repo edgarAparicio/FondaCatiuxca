@@ -1,0 +1,22 @@
+﻿
+@model EdgarAparicio.FondaCatiuxca.Business.Entity.Menu
+
+
+@{
+    ViewData["Title"] = "Detalle de Menu";
+}
+
+<h2>@Model.Nombre</h2>
+<div>
+    Id: @Model.Id
+</div>
+<div>
+    Descripcion: @Model.Descripcion
+</div>
+<div>
+    Tipo de Comida: @Model.TipoComida
+</div>
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Lista de Menus</a>
+
+
+

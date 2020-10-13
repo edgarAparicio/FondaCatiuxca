@@ -1,0 +1,29 @@
+﻿
+@model EdgarAparicio.FondaCatiuxca.Business.Entity.Menu
+@{
+    ViewData["Title"] = "Editar Menu";
+}
+
+<h2>@Model.Nombre</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="@Model.Id" />
+    <div class="form-group">
+        <label asp-for="@Model.Nombre"></label>
+        <input asp-for="@Model.Nombre" class="form-control" />
+        <span class="text-danger" asp-validation-for="@Model.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Descripcion"></label>
+        <input asp-for="@Model.Descripcion" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.TipoComida"></label>
+        <select class="form-control" asp-for="@Model.TipoComida"></select>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Cancelar</a>
+
+</form>
+

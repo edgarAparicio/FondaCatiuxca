@@ -1,3 +1,17 @@
-﻿
+﻿@model IEnumerable<EdgarAparicio.FondaCatiuxca.Business.Entity.Menu>
+@{
+    Layout = "_Layout";
+}
 
-<h2>Hola Amigo</h2>
+<h2>Menus</h2>
+
+@foreach (var menu in Model)
+{
+    <partial name="./_partialViewListaMenus" model="menu" />
+}
+
+@*<a asp-page="./Menus/EditarMenu" class="btn btn-primary">Crear Nuevo Menu</a>*@
+
+@section footer{
+    <div>Fonda Catiuxca 2020</div>
+}

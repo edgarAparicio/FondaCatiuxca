@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataFondaCatiuxca", "DataFo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFondaCatiuxca", "EntityFondaCatiuxca\EntityFondaCatiuxca.csproj", "{637C9E36-5E0A-4C41-AC19-56001AE16ACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FondaCatiuxcaMVC", "FondaCatiuxcaMVC\FondaCatiuxcaMVC.csproj", "{75828FA5-32F3-4E87-AE8C-D74FB862BF79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FondaCatiuxcaMVC", "FondaCatiuxcaMVC\FondaCatiuxcaMVC.csproj", "{75828FA5-32F3-4E87-AE8C-D74FB862BF79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

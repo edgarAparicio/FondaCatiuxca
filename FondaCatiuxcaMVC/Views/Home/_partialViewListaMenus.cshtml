@@ -36,7 +36,12 @@
         <a class="btn btn-lg"
            asp-controller="Home" asp-action="Editar"
            asp-route-idMenu="@Model.Id">
-            <i class="glyphicon glyphicon-zoom-in"></i>
+            <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-lg"
+           asp-controller="Home" asp-action="Eliminar"
+           asp-route-idMenu="@Model.Id">
+            <i class="glyphicon glyphicon-trash"></i>
         </a>
     </div>
 </div>

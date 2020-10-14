@@ -19,6 +19,7 @@ namespace FondaCatiuxcaMVC.Controllers
         [BindProperty]
         public Menu Menu { get; set; }
         public IEnumerable<SelectListItem> TipoComidaSelectList { get; set; }
+        
 
         public HomeController(IMenu menu, IHtmlHelper htmlH)
         {
@@ -43,6 +44,27 @@ namespace FondaCatiuxcaMVC.Controllers
             return View(menu);
         }
 
+        public ActionResult Crear()
+        {
+            TipoComidaSelectList = htmlHelper.GetEnumSelectList<TipoComida>();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Crear(Menu menu)
+        {
+            if (!ModelState.IsValid)
+            {
+                TipoComidaSelectList = htmlHelper.GetEnumSelectList<TipoComida>();
+                return View();
+            }
+
+            menuRepositorio.AgregarMenu(menu);
+            menuRepositorio.Commit();
+            return RedirectToAction("Index");
+
+        }
+
         public ActionResult Editar(int? idMenu)
         {
             TipoComidaSelectList = htmlHelper.GetEnumSelectList<TipoComida>();
@@ -60,6 +82,50 @@ namespace FondaCatiuxcaMVC.Controllers
                 return RedirectToPage("./NoSeEncontro");
             }
             return View(Menu);
+        }
+
+        [HttpPost]
+        public ActionResult Editar()
+        {
+            if (!ModelState.IsValid)
+            {
+                TipoComidaSelectList = htmlHelper.GetEnumSelectList<TipoComida>();
+                return View();
+            }
+
+            menuRepositorio.EditarMenu(Menu);
+            menuRepositorio.Commit();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Eliminar(int? idMenu)
+        {
+            if (idMenu.HasValue)
+            {
+                Menu = menuRepositorio.ObtenerMenuPorId(idMenu.Value);
+            }
+            else
+            {
+                Menu = new Menu();
+            }
+            if(Menu == null)
+            {
+                return RedirectToPage("./NoSeEncontro");
+            }
+            return View(Menu);
+        }
+
+        [HttpPost]
+        public ActionResult Eliminar(int idMenu)
+        {
+            Menu = menuRepositorio.ElimnarMenu(idMenu);
+            menuRepositorio.Commit();
+            if(Menu == null)
+            {
+                return RedirectToPage("./NoSeEncontro");
+            }
+
+            return RedirectToAction("Index");
         }
 
     }

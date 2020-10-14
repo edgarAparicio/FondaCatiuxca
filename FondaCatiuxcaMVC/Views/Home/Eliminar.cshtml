@@ -1,0 +1,28 @@
+﻿
+@model EdgarAparicio.FondaCatiuxca.Business.Entity.Menu
+
+
+@{
+    ViewData["Title"] = "Eliminar Menu";
+}
+
+<h2>@Model.Nombre</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id"/>
+    <div>
+        Id : @Model.Id
+    </div>
+    <div>
+        Descripcion : @Model.Descripcion
+    </div>
+    <div>
+        Tipo de Comida : @Model.TipoComida
+    </div>
+    <div class="alert-danger">
+        Esta seguro que deseas eliminar es Menu @Model.Nombre
+    </div>
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Cancelar</a>
+</form>
+
